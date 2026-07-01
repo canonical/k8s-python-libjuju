@@ -1,9 +1,18 @@
 A Python library for Juju
 =========================
 
-Source code: https://github.com/juju/python-libjuju
+This is **juju-resolute**, a fork of `python-libjuju
+<https://github.com/juju/python-libjuju>`_ (published on PyPI as ``juju``).
+It installs as ``juju-resolute`` but is imported as ``juju``, so it stays a
+drop-in replacement. Note: because both packages own the on-disk ``juju``
+directory, only one of ``juju`` or ``juju-resolute`` can be installed in a
+given environment at a time.
 
-Bug reports: https://github.com/juju/python-libjuju/issues
+Source code: https://github.com/canonical/k8s-python-libjuju
+
+Bug reports: https://github.com/canonical/k8s-python-libjuju/issues
+
+Upstream: https://github.com/juju/python-libjuju
 
 Documentation: https://pythonlibjuju.readthedocs.io/en/latest/
 
@@ -27,7 +36,7 @@ Installation
 
 .. code:: bash
 
-  pip3 install juju
+  pip3 install juju-resolute
 
 
 Quickstart

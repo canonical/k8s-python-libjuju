@@ -9,11 +9,11 @@ How to manage python-libjuju
 Install `python-libjuju`
 ------------------------
 
-In PyPI, which is the Python repository that `pip` is drawing modules from, `python-libjuju` is simply referred to as `juju`. You can install it directly via `pip`:
+This fork is published on PyPI as `juju-resolute` (it is imported as `juju`). You can install it directly via `pip`:
 
 .. code:: bash
 
-   pip3 install juju
+   pip3 install juju-resolute
 
 
 Use `python-libjuju`

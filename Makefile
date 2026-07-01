@@ -37,7 +37,7 @@ build-test:
 	uv build
 	python3 -m venv venv
 	. venv/bin/activate
-	pip install dist/juju-${VERSION}-py3-none-any.whl
+	pip install dist/juju_resolute-${VERSION}-py3-none-any.whl
 	python3 -c "from juju.controller import Controller"
 	rm dist/*.tar.gz dist/*.whl
 
@@ -47,7 +47,7 @@ release:
 	rm dist/*.tar.gz dist/*.whl || true
 	uv build
 	uvx twine check dist/*
-	uvx twine upload --repository juju dist/*
+	uvx twine upload --repository juju-resolute dist/*
 	git tag ${VERSION}
 	git push --tags
 

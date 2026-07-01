@@ -1,10 +1,10 @@
 [project]
-name = "juju"
-version = "3.6.1.3"  # Stop-gap until dynamic versioning is done; must be in sync with juju/version.py:CLIENT_VERSION
-description = "Python library for Juju"
+name = "juju-resolute"
+version = "3.6.1.4"  # Stop-gap until dynamic versioning is done; must be in sync with juju/version.py:CLIENT_VERSION
+description = "Python library for Juju (fork of python-libjuju for k8s team; installs as juju-resolute, imports as juju)"
 readme = "docs/readme.rst"
 license = { file = "LICENSE" }
-maintainers = [{name = "Juju Ecosystem Engineering", email = "juju@lists.ubuntu.com"}]
+maintainers = [{name = "Canonical Kubernetes", email = "k8s-crew@lists.canonical.com "}]
 requires-python = ">=3.8.6"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -51,11 +51,11 @@ docs = [
 ]
 
 [project.urls]
-"Homepage" = "https://juju.is/docs/sdk"
-"Repository" = "https://github.com/juju/python-libjuju"
-"Issues" = "https://github.com/juju/python-libjuju/issues"
+"Homepage" = "https://github.com/canonical/k8s-python-libjuju"
+"Repository" = "https://github.com/canonical/k8s-python-libjuju"
+"Issues" = "https://github.com/canonical/k8s-python-libjuju/issues"
+"Upstream" = "https://github.com/juju/python-libjuju"
 "Documentation" = "https://pythonlibjuju.readthedocs.io/en/latest/"
-"Changelog" = "https://pythonlibjuju.readthedocs.io/en/latest/changelog.html#changelog"
 
 [tool.setuptools.dynamic]
 version = {attr = "juju.version.CLIENT_VERSION"}

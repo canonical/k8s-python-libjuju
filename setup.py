@@ -15,7 +15,7 @@ long_description = f"{readme.read_text()}\n\n{changelog.read_text()}"
 long_description_content_type = "text/x-rst"
 
 setup(
-    name="juju",
+    name="juju-resolute",
     version=CLIENT_VERSION.strip(),
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     package_data={"juju": ["py.typed"]},
@@ -44,12 +44,15 @@ setup(
         ]
     },
     include_package_data=True,
-    maintainer="Juju Ecosystem Engineering",
-    maintainer_email="juju@lists.ubuntu.com",
-    description=("Python library for Juju"),
+    maintainer="Canonical Kubernetes",
+    maintainer_email="k8s-crew@lists.canonical.com",
+    description=(
+        "Python library for Juju (fork of python-libjuju for k8s team; "
+        "installs as juju-resolute, imports as juju)"
+    ),
     long_description=long_description,
     long_description_content_type=long_description_content_type,
-    url="https://github.com/juju/python-libjuju",
+    url="https://github.com/canonical/k8s-python-libjuju",
     license="Apache 2",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
